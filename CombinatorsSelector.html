@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid;
+        }
+
+
+        /* DESCENDENT-SELECTOR  -- ellathinim kodukaan vendi */
+        .container p{
+            background-color: antiquewhite;
+        }
+
+
+        /* CHILD-SELECTOR  -- child mathram kodukan vendi */
+        .container > p {
+            background-color: brown;
+        }
+
+        /* GENERAL-SIBLING SELECTOR  -- porath ulla siblings inu mathram varan vendii, ulithe p onnum work aavilla */
+        .container ~ p{
+            background-color: yellowgreen;
+        }
+
+        /* ADJECENT-SIBLING SELECTOR -- adjacent & aduth kedkana sibling nu mathram wrk aavan */
+        .container + p{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>HEADING-1</p>
+        
+        <p>HEADING-2</p>
+        <div>
+            <p>HEADING-3</p>
+        </div>     
+    </div>
+
+
+    <p>HEADING-4</p>
+    <p>HEADING-5</p>
+    
+</body>
+</html>

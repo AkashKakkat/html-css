@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            background-color: lightblue;
+            padding: 20px;
+            font-size: 18px;
+            text-align: center;
+
+
+        }
+
+        @media screen and (max-width:600px){
+            .content{
+                background-color: orange;
+                font-size: 16px;
+            }
+
+        }
+         @media print{
+            .content{
+                background-color:yellowgreen;
+                font-size: 16px;
+                color: red;
+                
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur.
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            animation: slidein 1s ease-out forwards;
+        }
+        @keyframes slidein{
+            from{
+                transform: translateX(500px);
+            }
+            to{
+                transform: translateX(0px);
+            }
+
+        }
+         .box1{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            animation: slide-in 1s ease-out forwards;
+        }
+        @keyframes slide-in{
+            
+            from{
+                transform: translateY(-100px);
+            }
+            to{
+                transform: translateY(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>
