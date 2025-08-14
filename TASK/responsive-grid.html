@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .container{
+            display: grid;
+            grid-template-rows:65px 360px 155px ;
+            grid-template-columns: auto;
+            grid-template-areas: 
+            "header"
+            "content"
+            "footer";
+        }
+
+        .header{
+            background-color:white;
+            grid-area: header;
+            color: black;
+            
+        }
+        .content{
+            background-color: black;
+            grid-area: content;
+            color:white;
+        }
+        .footer{
+            background-color: white;
+            grid-area: footer;
+            color: black;
+        }
+        nav ul li{
+            font-size: 10px;
+            
+            padding: 2px;
+            font-weight: bolder;  
+        }
+        .head-btn{
+            background-color: black;
+            color: white;
+            
+            border: none;
+            font-size: 12px;
+            width:95px ;
+            height: 32px;
+
+        }
+
+        .content-h3{
+           
+        }
+        .content-btn{
+            
+        }
+
+        .foot-h4{
+          
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul>
+                    <li>PORTFOLIO</li>
+                    <li>SERVICES</li>
+                    <li>ABOUT US</li>
+                    <li>BLOG</li>
+            </ul>
+            <button class="head-btn">CONTACT US</button>
+        </div>
+        <div class="content">
+            <h3 class="content-h3">Mobiles and Web Apps</h3>
+            <h3 class="content-h3">Developed Right the</h3>
+            <h3 class="content-h3">First Time</h3>
+            <button class="content-btn">GET IN TOUCH</button>
+        </div>
+        <div class="footer">
+            <center><h4 class="foot-h4">Our Services</h4></center>
+        </div>
+    </div>
+</body>
+</html>
